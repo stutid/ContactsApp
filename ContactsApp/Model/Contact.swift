@@ -11,12 +11,12 @@ import CoreData
 
 extension Contact {
     
-    class func saveDataInDB(for dic: [String: Any]) {
+    class func saveDataInDB(for obj: Contact) {
         
         let context = CoreDataStack.sharedInstance.backgroundQueueContext
         let myContact = Contact(context: context)
-        myContact.name = dic["name"] as? String
-        myContact.number = dic["number"] as? Int64 ?? 0
+        myContact.name = obj.name
+        myContact.number = obj.number
         do {
             try context.save()
         }

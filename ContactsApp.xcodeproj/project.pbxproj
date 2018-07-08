@@ -20,6 +20,8 @@
 		29250EDD20F0ED2300EC0F31 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250EDC20F0ED2300EC0F31 /* Contact.swift */; };
 		29250EE120F1088A00EC0F31 /* AddContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250EE020F1088A00EC0F31 /* AddContactTableViewCell.swift */; };
 		29250EE320F110B400EC0F31 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29250EE220F110B400EC0F31 /* CoreDataStack.swift */; };
+		29FA676520F2283700E9A877 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA676420F2283700E9A877 /* ContactListViewModel.swift */; };
+		29FA676720F2395C00E9A877 /* AddContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA676620F2395C00E9A877 /* AddContactViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		29250EDC20F0ED2300EC0F31 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		29250EE020F1088A00EC0F31 /* AddContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactTableViewCell.swift; sourceTree = "<group>"; };
 		29250EE220F110B400EC0F31 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		29FA676420F2283700E9A877 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
+		29FA676620F2395C00E9A877 /* AddContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				29250EB220F0E5FF00EC0F31 /* Info.plist */,
+				29250EE220F110B400EC0F31 /* CoreDataStack.swift */,
 				29250ED620F0E7CE00EC0F31 /* ViewModel */,
 				29250ED520F0E7C500EC0F31 /* View */,
 				29250ED420F0E7BB00EC0F31 /* Model */,
@@ -139,7 +144,6 @@
 		29250ED420F0E7BB00EC0F31 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				29250EAA20F0E5FF00EC0F31 /* ContactsApp.xcdatamodeld */,
 				29250EDC20F0ED2300EC0F31 /* Contact.swift */,
 			);
 			path = Model;
@@ -148,10 +152,10 @@
 		29250ED520F0E7C500EC0F31 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				29250EDF20F1086600EC0F31 /* Storyboard */,
 				29250EA320F0E5FF00EC0F31 /* AppDelegate.swift */,
-				29250EA520F0E5FF00EC0F31 /* ContactsListViewController.swift */,
-				29250ED820F0E8F800EC0F31 /* AddContactViewController.swift */,
+				29250EDE20F1085C00EC0F31 /* TableViewCell */,
+				29250EDF20F1086600EC0F31 /* Storyboard */,
+				29FA676320F2274500E9A877 /* Controllers */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,8 +163,8 @@
 		29250ED620F0E7CE00EC0F31 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				29250EDE20F1085C00EC0F31 /* TableViewCell */,
-				29250EE220F110B400EC0F31 /* CoreDataStack.swift */,
+				29FA676420F2283700E9A877 /* ContactListViewModel.swift */,
+				29FA676620F2395C00E9A877 /* AddContactViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -168,6 +172,7 @@
 		29250ED720F0E82700EC0F31 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				29250EAA20F0E5FF00EC0F31 /* ContactsApp.xcdatamodeld */,
 				29250EAF20F0E5FF00EC0F31 /* LaunchScreen.storyboard */,
 				29250EAD20F0E5FF00EC0F31 /* Assets.xcassets */,
 			);
@@ -189,6 +194,15 @@
 				29250EA720F0E5FF00EC0F31 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		29FA676320F2274500E9A877 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				29250EA520F0E5FF00EC0F31 /* ContactsListViewController.swift */,
+				29250ED820F0E8F800EC0F31 /* AddContactViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,10 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FA676520F2283700E9A877 /* ContactListViewModel.swift in Sources */,
 				29250EAC20F0E5FF00EC0F31 /* ContactsApp.xcdatamodeld in Sources */,
 				29250EE120F1088A00EC0F31 /* AddContactTableViewCell.swift in Sources */,
 				29250ED920F0E8F800EC0F31 /* AddContactViewController.swift in Sources */,
 				29250EA620F0E5FF00EC0F31 /* ContactsListViewController.swift in Sources */,
+				29FA676720F2395C00E9A877 /* AddContactViewModel.swift in Sources */,
 				29250EA420F0E5FF00EC0F31 /* AppDelegate.swift in Sources */,
 				29250EDD20F0ED2300EC0F31 /* Contact.swift in Sources */,
 				29250EDB20F0EC8800EC0F31 /* ContactsListTableViewCell.swift in Sources */,

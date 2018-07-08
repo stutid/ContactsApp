@@ -27,9 +27,14 @@
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gkp-f2-coD">
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Hai-6p-xbB">
+                                    <rect key="frame" x="0.0" y="114" width="375" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelImageCell" rowHeight="86" id="aNE-cc-qtc" customClass="ContactsListTableViewCell" customModule="ContactsApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="labelImageCell" rowHeight="86" id="aNE-cc-qtc" customClass="ContactsListTableViewCell" customModule="ContactsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aNE-cc-qtc" id="Nmg-yq-TL7">
@@ -72,7 +77,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO2-Y1-QJQ">
-                                <rect key="frame" x="315" y="607" width="60" height="60"/>
+                                <rect key="frame" x="305" y="597" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="OSU-F5-wGo"/>
                                     <constraint firstAttribute="width" constant="60" id="Zzw-vf-Xh1"/>
@@ -85,11 +90,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CO2-Y1-QJQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5UQ-vo-mxO"/>
+                            <constraint firstItem="CO2-Y1-QJQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="5UQ-vo-mxO"/>
                             <constraint firstItem="XMG-nV-CCY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5cY-xU-PC9"/>
                             <constraint firstItem="Gkp-f2-coD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="957-dt-KAX"/>
                             <constraint firstItem="Gkp-f2-coD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iks-TY-U66"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CO2-Y1-QJQ" secondAttribute="bottom" id="Luy-l2-g3K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CO2-Y1-QJQ" secondAttribute="bottom" constant="10" id="Luy-l2-g3K"/>
                             <constraint firstItem="XMG-nV-CCY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PFt-QN-QBq"/>
                             <constraint firstItem="XMG-nV-CCY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uvF-Pu-36o"/>
                             <constraint firstItem="Gkp-f2-coD" firstAttribute="top" secondItem="XMG-nV-CCY" secondAttribute="bottom" id="vDa-qI-E3E"/>
@@ -118,9 +123,14 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2e2-kv-b7Y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="HlV-9i-rGV">
+                                    <rect key="frame" x="0.0" y="177" width="375" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="80" id="Lcm-vd-VnO" customClass="AddContactTableViewCell" customModule="ContactsApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="80" id="Lcm-vd-VnO" customClass="AddContactTableViewCell" customModule="ContactsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lcm-vd-VnO" id="eTS-pw-bVk">
@@ -145,7 +155,7 @@
                                             <outlet property="profilePicture" destination="bS0-Z6-Ohk" id="pdK-Qr-76S"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="textFieldCell" rowHeight="69" id="zMF-pY-CFW" customClass="AddContactTableViewCell" customModule="ContactsApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="textFieldCell" rowHeight="69" id="zMF-pY-CFW" customClass="AddContactTableViewCell" customModule="ContactsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="108" width="375" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zMF-pY-CFW" id="adU-2W-e65">
